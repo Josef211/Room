@@ -6,6 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
+@Dao
 interface WordDao {
 
     @Query("SELECT * FROM word_table ORDER BY word ASC")
