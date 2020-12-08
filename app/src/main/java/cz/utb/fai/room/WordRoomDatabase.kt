@@ -44,7 +44,7 @@ abstract class WordRoomDatabase : RoomDatabase() {
         private class WordDatabaseCallback(
             private val scope: CoroutineScope
         ) : RoomDatabase.Callback() {
-            
+
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
                 // If you want to keep the data through app restarts,
